@@ -26,3 +26,5 @@ git scm useful options for fit log format
 - git commit --amend => This command opens vim editor 
 - :wq => Exit from vim editor
 - i => to insert text on vim editor
+-- git checkout -- first_renamed.txt => This command will rollback (matched) the content of the file first_renamed.txt with the previous commit
+-- git checkout -f => This command will rollback (matched) the whole working directory with the previous commit
