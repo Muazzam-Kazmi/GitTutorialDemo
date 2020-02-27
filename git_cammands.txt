@@ -1,0 +1,28 @@
+- git commit -m "Added static" => This command will add content in the staging area to a particlular commit
+- git commit -a -m "Direct Commit" = > This command add the files to the commit direclty by skipping staging area
+- git log => This command will show all the commits
+- q => This command is used to exit the pager
+- touch error.log => This command generates a file named as error with extension log
+- touch .gitignore => This command creates a file named as .gitignore, if we write the name of the file (with extension) or directory 
+the name of the file or directory inside this file then git ignores that file or directory
+- git diff => This command is used to check the difference between working directory and staging area 
+- git diff --stage => This command is used to check difference between previous commit and staging area
+- git add . => This command adds all the files and folders to staging area
+- git rm third.txt =>  This command removed third.txt file and staged the current status of files
+- git mv first.txt first_renamed.txt => This command renamed first.txt to first_named.txt and staged the new file
+- git rm --cached db.accdb => This command untrack files that are currently under track.
+- rm -rf .git => This command will delete git repository
+- git log -p => This command will show commit along with the changes made to the project
+- git log -p -3 => This command shows only 3 commits along with their diff
+- git log --stat => This command shows short summary about commits like author, date, how many number of lines add or deleted
+- git log --pretty=oneline = > This command will show me one commit perline
+- git log --pretty=short => This will show one limited information about commit like 
+commit, Author and message.
+- git log --pretty=full => This will show one some more information about commit like 
+commit, author, comiter, message
+git scm useful options for fit log format
+- git log --pretty=fromat:%h -- %an => This command shows abbreviated commit hash (commit in short form)and authorname
+- git log --pretty=fromat:%h -- %ae => This command shows abbreviated commit hash (commit in short form)and authoremail
+- git commit --amend => This command opens vim editor 
+- :wq => Exit from vim editor
+- i => to insert text on vim editor
