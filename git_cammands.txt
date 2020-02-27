@@ -1,3 +1,8 @@
+here github host our repositories, github is a website which host git repositories
+you can also use GITLAB, BIGBUCKET etc for the same purpose
+insert => Control + Insert
+past => Shift + Insert
+
 - git commit -m "Added static" => This command will add content in the staging area to a particlular commit
 - git commit -a -m "Direct Commit" = > This command add the files to the commit direclty by skipping staging area
 - git log => This command will show all the commits
@@ -27,4 +32,25 @@ git scm useful options for fit log format
 - :wq => Exit from vim editor
 - i => to insert text on vim editor
 -- git checkout -- first_renamed.txt => This command will rollback (matched) the content of the file first_renamed.txt with the previous commit
+git remote add origin https://github.com/Muazzam5/GitTutorialDemo.git => 
+git remote add origin => This will create a URL with name origin for the website https://github.com/Muazzam5/GitTutorialDemo.git 
+https://github.com/Muazzam5/GitTutorialDemo.git  => This is the website which contains our git repository
+- gir remote -v => This command will show both the push and pull URLs
 -- git checkout -f => This command will rollback (matched) the whole working directory with the previous commit
+In github push means to copy your code, files and directories to the remotre repository (github)
+and to push means to copy all the files and directories to your local system from remote repository (github) along with overall history
+-- git remote => remote means a website or repository on internet
+
+How to push an existing repository from the command line
+git remote add origin https://github.com/Muazzam5/GitTutorialDemo.git
+After that create SSH KEYS
+ssh-keygen -t rsa -b 4096 -C "muazzam.ali72@gmail.com"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+tail ~/.ssh/id_rsa.pub -> This generate an ssh key 
+after that Go to your Github account settings -> SSH and GPG Keys -> SSH Keys/Add new Add a title and paste the above generated key in the 
+Key portion of SSH Key section
+finally run => git push -u origin master
+and you copy all the files from your local git repository to github
+
+
